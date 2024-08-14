@@ -40,7 +40,7 @@ _ "fmt"
 . "fmt"
 meupacote.Marshal()
 
-! Estruturas
+! Escopo
 func Privada() {}
 func publico() {}
 
