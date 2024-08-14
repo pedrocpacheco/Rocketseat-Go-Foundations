@@ -58,4 +58,30 @@ func matematica() {
 }
 
 // * Varios casos na mesma linha
-func isWeekend2(x time.Time)
+func isWeekend2(x time.Time) bool {
+	switch x.Weekday() {
+	case time.Sunday, time.Saturday:
+		return true
+	default:
+		return false
+	}
+}
+
+// * Switch de Tipo
+func tipos(x any) {
+	switch t := x.(type) {
+	case int:
+		fmt.Println("x é um inteiro")
+	case string:
+		fmt.Println("x é um string")
+		takeString(t)
+	default:
+		fmt.Println("x é outro tipo")
+	}
+}
+
+func takeString(s string) {
+	fmt.Println(s)
+}
+
+// ! Switch X IFs nao muda tanto a performance
