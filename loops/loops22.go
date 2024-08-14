@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func loops22() {
+func Loops22() {
 
 	// ! Interando sobre um inteiro
 	for range 10 {
